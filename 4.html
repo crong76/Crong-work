@@ -4,45 +4,76 @@
   <title>new AirPods Pro 2</title>
   <meta charset="uft-8">
   <style>
-    #active {
-      color:aqua;
-    }
-    .saw {
-      color:gray;
+    body{
+      margin:0;
     }
     a {
-      color:yellow;
-      text-decoration:none;
+      color:black;
+      text-decoration: none;
     }
-    H1 {
-      text-align:center;
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
     }
-
-
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+    @media(max-width:800px){
+    grid{
+      display: block;
+      }
+     ol{
+     border-right:none;
+     }
+     h1 {
+      border-bottom:none;
+     }
+    }
   </style>
-</head>
-<body>
-  <h1><a href="index.html" class="saw">Apple</h1>
-  <ol>
-    <li><a href="1.html" class="saw">Apple company</li>
-    <li><a href="2.html" class="saw">new iphone</li>
-    <li><a href="3.html" class="saw">new apple watch</li>
-    <li><a href="4.html" class="saw" id="active">new AirPods</li>
-  </ol>
-  <h3>new AirPods Pro 2</h3>
-  <p>This is Apple's Bluetooth wireless earphone that was released on September 7,
-  2022 at 10 a.mThe exterior design is almost identical to the previous one.
-  There is a slight difference in the shape of the kernel type with a stem and the sensor changes.
-  It is equipped with the Apple H2 chip, the successor to the previous Apple H1 chip.
-  On September 8, 2022, Apple announced in the KST 02:00 event video that the active
-  noise cancelling performance was up to twice the performance of its predecessor.
-  In addition, a technology for selectively blocking external noise such as
-  construction site noise was introduced through adaptive noise cancelling technology.
-  Volume control function through swipe has been added to the force touch control of
-  the existing server part, and it supports IPX 4 grade waterproofing in the same way
-  as the previous one. In addition, the U1 chip is mounted to provide my search
-  function through UWB, and it is possible to play the search sound through the
-  internal speaker added together.</p>
-  <img src="Airpods Pro2.png">
-  <p style="margin-top;40px">
+ </head>
+ <body>
+   <h1><a href="index.html">Apple</a></h1>
+   <div id="grid">
+   <ol>
+     <li><a href="1.html">apple company</a></li>
+     <li><a href="2.html">new iphone</a></li>
+     <li><a href="3.html">new apple watch</a></li>
+     <li><a href="4.html">new airpods pro2</a></li>
+   </ol>
+   <div id="article">
+       <p><h3>new AirPods Pro 2</h3>
+       This is Apple's Bluetooth wireless earphone that was released on September 7,
+       2022 at 10 a.mThe exterior design is almost identical to the previous one.
+       There is a slight difference in the shape of the kernel type with a stem and the sensor changes.
+       It is equipped with the Apple H2 chip, the successor to the previous Apple H1 chip.
+       On September 8, 2022, Apple announced in the KST 02:00 event video that the active
+       noise cancelling performance was up to twice the performance of its predecessor.
+       In addition, a technology for selectively blocking external noise such as
+       construction site noise was introduced through adaptive noise cancelling technology.
+       Volume control function through swipe has been added to the force touch control of
+       the existing server part, and it supports IPX 4 grade waterproofing in the same way
+       as the previous one. In addition, the U1 chip is mounted to provide my search
+       function through UWB, and it is possible to play the search sound through the
+       internal speaker added together.
+       <img src="Airpods Pro2.png" width= 100%>
+      </p>
+    </div>
+</div>
 </body>
+</html>

@@ -4,43 +4,76 @@
   <title>apple company-welcome</title>
   <meta charset="uft-8">
   <style>
-    #active {
-      color:aqua;
+  body{
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+   grid{
+    display: block;
     }
-    .saw {
-      color:gray;
-    }
-    a {
-      color:yellow;
-      text-decoration:none;
-    }
-    H1 {
-      text-align:center;
-    }
-
+   ol{
+   border-right:none;
+   }
+   h1 {
+    border-bottom:none;
+   }
+  }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" class="saw" id="active">Apple</h1>
-  <ol>iphone</li>
-    <li><a href="3.html" class="saw">Apple company
-    <li><a href="1.html" class="saw">new iphone</li>
-    <li><a href="2.html" class="saw">new watch</li>
-    <li><a href="4.html" class="saw">new AirPods</li>
+  <h1><a href="index.html">Apple</a></h1>
+  <div id="grid">
+  <ol>
+    <li><a href="1.html">apple company</a></li>
+    <li><a href="2.html">new iphone</a></li>
+    <li><a href="3.html">new apple watch</a></li>
+    <li><a href="4.html">new airpods pro2</a></li>
   </ol>
-    <p>Although it seems to have a low market share in the PC market,
-    it is a competitor of Windows computers in name and considering the characteristics
-    of making and selling software and hardware together, and the limitations of
-    a small lineup of products. Of course, the location is like that,
-    and in terms of realistic figures, it lags far behind absolute supply
-    and market share, both hardware and software. However, it has an unrivaled influence
-    in the digital content and digital device sectors. The iPod was a huge hit, beating iRiver,
-    and the iPhone had a lot of influence on the many capacitive Multi-Touch smartphones
-    that will follow.On August 25, 2011, Steve Jobs stepped down as CEO and Tim Cook
-    became CEO. Jobs, who took over the CEO position, died on October 6, 2011, after
-    seven years of fighting pancreatic cancer. Internet users were shocked to hear of his sudden death.
-    Including iPad 2, iPhone 4s after Jobs' death, iPhone 5s and iPhone 5s later,
-    and plans for EarPods and AirPods are all Steve Jobs' posthumous works. Touch ID,
-    which has dominated an era, is also a concept devised by Steve Jobs during his lifetime.</p>
-    <img src="head office.png"
+  <div id="article">
+      <p><h3>Apple</h3>Although it seems to have a low market share in the PC market,
+       it is a competitor of Windows computers in name and considering the characteristics
+       of making and selling software and hardware together, and the limitations of
+       a small lineup of products. Of course, the location is like that,
+       and in terms of realistic figures, it lags far behind absolute supply
+       and market share, both hardware and software. However, it has an unrivaled influence
+       in the digital content and digital device sectors. The iPod was a huge hit, beating iRiver,
+       and the iPhone had a lot of influence on the many capacitive Multi-Touch smartphones
+       that will follow.On August 25, 2011, Steve Jobs stepped down as CEO and Tim Cook
+       became CEO. Jobs, who took over the CEO position, died on October 6, 2011, after
+       seven years of fighting pancreatic cancer. Internet users were shocked to hear of his sudden death.
+       Including iPad 2, iPhone 4s after Jobs' death, iPhone 5s and iPhone 5s later,
+       and plans for EarPods and AirPods are all Steve Jobs' posthumous works. Touch ID,
+       which has dominated an era, is also a concept devised by Steve Jobs during his lifetime.</p>
+       <img src="head office.png" width= 100%>
+      </p>
+    </div>
+</div>
 </body>
+</html>

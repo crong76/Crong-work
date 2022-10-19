@@ -4,37 +4,69 @@
   <title>new apple watch</title>
   <meta charset="uft-8">
   <style>
-    #active {
-      color:aqua;
-    }
-    .saw {
-      color:gray;
+    body{
+      margin:0;
     }
     a {
-      color:yellow;
-      text-decoration:none;
+      color:black;
+      text-decoration: none;
     }
-    H1 {
-      text-align:center;
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
     }
-
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+    @media(max-width:800px){
+    grid{
+      display: block;
+      }
+     ol{
+     border-right:none;
+     }
+     h1 {
+      border-bottom:none;
+     }
+    }
   </style>
-</head>
-<body>
-  <h1><a href="index.html" class="saw">Apple</h1>
-  <ol>
-    <li><a href="1.html" class="saw">Apple company</li>
-    <li><a href="2.html" class="saw">new iphone</li>
-    <li><a href="3.html" class="saw" id="active">new apple watch</li>
-    <li><a href="4.html">new AirPods Pro</li>
-  </ol>
-  <h3>new apple watch</h3>
-  <p>Apple Watch Series 8 will release the smartwatch Apple Watch by 2022 at 10 a.m.
-  on September 7.Features include 50m waterproof, IP6X dustproof, 3rd generation heart
-  rate recognition and electrocardiogram sensors, compass, blood oxygen saturation sensor,
-  constant detection altimeter, models include GPS, cellular, aluminium steel colors such as
-  Midnight, Starlight, Silver, PRODUCT (RED),and stainless steel
-  colors include Space Black, Graphite, Silver, Gold</p>
-  <img src="apple watch series 8.png">
-  <p style="margin-top;40px">
+ </head>
+ <body>
+   <h1><a href="index.html">Apple</a></h1>
+   <div id="grid">
+   <ol>
+     <li><a href="1.html">apple company</a></li>
+     <li><a href="2.html">new iphone</a></li>
+     <li><a href="3.html">new apple watch</a></li>
+     <li><a href="4.html">new airpods pro2</a></li>
+   </ol>
+   <div id="article">
+       <p><h3>new apple watch</h3>
+       Apple Watch Series 8 will release the smartwatch Apple Watch by 2022 at 10 a.m.
+       on September 7.Features include 50m waterproof, IP6X dustproof, 3rd generation heart
+       rate recognition and electrocardiogram sensors, compass, blood oxygen saturation sensor,
+       constant detection altimeter, models include GPS, cellular, aluminium steel colors such as
+       Midnight, Starlight, Silver, PRODUCT (RED),and stainless steel
+       colors include Space Black, Graphite, Silver, Gold
+       <img src="apple watch series 8.png" width= 100%>
+     </p>
+   </div>
+</div>
 </body>
+</html>
